@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <title>微信聊天界面生成器</title>
     <style>
+        #userImput {
+            width: 80%;
+            margin: 0px 30%;
+        }
         .ui{
-            margin-left:  420px;
+            margin: 0px auto;
         }
         #canvas {
             border: 1px solid #aaaaaa;
@@ -19,6 +23,7 @@
 </head>
 <body>
 <canvas id="canvas"></canvas>
+<div id="userImput">
 <div class="ui input" style="height: 50px">
     <input id="hisName" placeholder="对方的昵称" type="text">
     <button class="ui primary button" id="generate" onclick="generate(context)">一键生成</button>
@@ -92,7 +97,7 @@
     <input type="text" id="cnt8"/>
 </div>
 <br/><br/>
-<div class = 'myProfile' style="float:left; margin-left: 420px"><strong>我的头像</strong>
+<div class = 'myProfile' style="float:left; "><strong>我的头像</strong>
     <div id="preview1">
         <img id="imgHead1" width="120" height="120" border=0 src="image/myHead.jpg" />
     </div>
@@ -103,6 +108,7 @@
         <img id="imgHead2" width="120" height="120" border="0" src="./image/hisHead.jpg" />
     </div>
     <input type="file" onchange="previewImage2(this)"/>
+</div>
 </div>
 <br/><br/><br/>
 
